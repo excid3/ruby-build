@@ -14,7 +14,7 @@
 #   --version        Show version of ruby-build
 #
 
-RUBY_BUILD_VERSION="20201225"
+RUBY_BUILD_VERSION="20210405"
 
 OLDIFS="$IFS"
 
@@ -626,7 +626,7 @@ build_package_standard() {
 }
 
 build_package_autoconf() {
-  { autoconf
+  { autoreconf -i
   } >&4 2>&1
 }
 
